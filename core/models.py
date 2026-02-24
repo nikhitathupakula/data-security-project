@@ -8,6 +8,9 @@ class User:
         self.role = role  # admin / user / attacker
         self.failed_attempts = 0
         self.created_at = datetime.utcnow()
+        self.nonce = None
+        self.key_id = None
+        self.hash = None
 
 
 class Object:
